@@ -414,6 +414,7 @@ header {
 .membership-container h2 {
     font-size: var(--fs-mobile-h2);
     font-weight: 600;
+    text-align: center;
 }
 
 .membership-cards {
@@ -431,12 +432,14 @@ header {
     padding: 1rem;
     border-radius: .5rem;
     max-width: 100%;
-    width: 18rem;
+    width: 80%;
+    margin-top: 2rem;
 }
 
 .membership-card h3 {
     font-size: var(--fs-mobile-h4);
     font-weight: 600;
+    margin-bottom: 1.5rem;
 }
 
 .card-top {
@@ -454,7 +457,7 @@ header {
 }
 
 .card-hr {
-    margin: 1rem 0;
+    margin: 1.5rem 0;
 }
 
 .card-bottom {
@@ -482,7 +485,44 @@ header {
     padding: 1rem;
     margin-bottom: .5rem;
     width: 100%;
+}
 
+.membership-card:nth-child(2) {
+    background-color: var(--color-header-bg);
+    background-image: url(./images/pattern-glow.svg);
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+/* TESTIMONIAL SECTION */
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.testimonial-stars {
+    display: flex;
+}
+
+.testimonial-text {
+    font-family: var(--ff-martian);
+    font-weight: 700;
+    font-size: var(--fs-mobile-h4);
+    color: black;
+    margin-top: 1rem;
+}
+
+.testimonial-writer {
+    margin-top: 1.5rem;
 }
 
 
@@ -612,15 +652,80 @@ TABLETS
         display: none;
     }
 
-
-
-
-
-
     /* YOUR TECH READING JOURNEY */
     .journey-title {
         font-size: var(--fs-tablet-title);
         font-weight: 600;
+    }
+
+
+
+
+
+
+
+
+    /* MEMBERSHIP SECTION */
+    .membership-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .membership-container h2 {
+        font-size: var(--fs-tablet-h2);
+        font-weight: 600;
+        text-align: center;
+    }
+    
+    .membership-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1rem;
+    }
+    
+    .membership-card {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgba(128, 128, 128, 0.558);
+        padding: 1rem;
+        border-radius: .5rem;
+        max-width: 100%;
+        width: 20rem;
+        margin-top: 2rem;
+    }
+
+
+
+
+
+
+
+    /* TESTIMONIAL SECTION */
+    .testimonial-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+
+    .testimonial-stars img {
+        width: 2rem;
+    }
+
+    .testimonial-text p{
+        font-family: var(--ff-martian);
+        font-weight: 700;
+        font-size: var(--fs-tablet-h4);
+        line-height: 1.2;
+        color: black;
+        margin-top: 1rem;
+    }
+
+    .testimonial-writer {
+        margin-top: 1.5rem;
     }
 
 }
@@ -786,8 +891,8 @@ DESKTOP
     }
 
     .journey-title {
-        font-size: var(--fs-title);
-        font-weight: 600;
+        font-size: var(--fs-h2);
+        font-weight: 700;
         text-align: center;
         max-width: 45rem;
         line-height: 1.25;
@@ -813,5 +918,92 @@ DESKTOP
     .journey-item {
         max-width: 20rem;
     }
+
+
+
+
+
+
+
+
+
+    /* MEMBERSHIP SECTION */
+    .membership-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .membership-container h2 {
+        font-size: var(--fs-h2);
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    .membership-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 2rem;
+    }
+    
+    .membership-card {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgba(128, 128, 128, 0.558);
+        padding: 1rem;
+        border-radius: .5rem;
+        max-width: 100%;
+        width: 20rem;
+        margin-top: 2rem;
+    }
+
+    .membership-card:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgba(128, 128, 128, 0.558);
+        padding: 1rem;
+        border-radius: .5rem;
+        max-width: 100%;
+        width: 20rem;
+        margin-top: 2rem;
+    }
+
+
+
+
+
+
+
+
+    /* TESTIMONIAL SECTION */
+    .testimonial-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    .testimonial-stars img {
+        width: 2rem;
+    }
+
+    .testimonial-text p{
+        font-family: var(--ff-martian);
+        font-weight: 700;
+        font-size: var(--fs-h2);
+        line-height: 1.2;
+        color: black;
+        margin-top: 1rem;
+        max-width: 50rem;
+    }
+
+    .testimonial-writer {
+        margin-top: 1.5rem;
+    }
+
 
 }
